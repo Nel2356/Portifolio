@@ -25,6 +25,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
+}
+
+#saudacao {
+    position: absolute; 
+    top: 10px;    
+    right: 20px;  
+
+    font-size: 0.8em; 
+    color: #e0e0e0;   
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px;
+    z-index: 1001;
 }
 
 .main-menu ul {
