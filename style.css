@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    color: #f4f4f4;
+    color: #1a1616;
 }
 
 html {
@@ -49,7 +49,7 @@ header {
 }
 
 .main-menu a:hover {
-    background-color: #4CAF50;
+    background-color: #203f1f;
 }
 
 .content-section {
@@ -64,8 +64,8 @@ header {
 }
 
 .light-bg {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #837f7f;
 }
 
 .dark-bg {
