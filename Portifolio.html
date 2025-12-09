@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio_Nel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
 
     <header>
+        <span id="saudacao">Carregando...</span> 
+        
         <nav class="main-menu">
             <ul>
                 <li><a href="Portifolio.html">Eu</a></li>
@@ -21,17 +23,33 @@
         <h2>sobre mim</h2>
         <h2> oi👋</h2>
 
-    <article>
-        <h1>Sobre</h1>
-        <p>Sou estudante de CC na cesar scool</p>
-        <p>sempre fui apaixonado pela tecnologia e isso foi oq me levou </p>
-        <p></p>
-    </article>
-
+        <article>
+            <h1>Sobre</h1>
+            <p>Sou estudante de CC na cesar scool</p>
+            <p>sempre fui apaixonado pela tecnologia e isso foi oq me levou </p>
+            <p></p>
+        </article>
     </section>
+
+    <script>
+        function exibirSaudacao() {
+            const hora = new Date().getHours();
+            let textoSaudacao = "";
+
+            if (hora >= 5 && hora < 12) {
+                textoSaudacao = "Bom dia! ☀️";
+            } else if (hora >= 12 && hora < 18) {
+                textoSaudacao = "Boa tarde! 🌇";
+            } else {
+                textoSaudacao = "Boa noite! 🌙";
+            }
+
+            document.getElementById("saudacao").textContent = textoSaudacao;
+        }
+
+        exibirSaudacao();
+    </script>
 </body>
 </html>
 
-<div class="container">
-    <div class="quadrado"></div>
-</div>
+
