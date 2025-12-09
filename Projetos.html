@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio_Nel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
 
     <header>
+        <span id="saudacao">Carregando...</span> 
+        
         <nav class="main-menu">
             <ul>
                 <li><a href="Portifolio.html">Eu</a></li>
@@ -17,11 +16,37 @@
         </nav>
     </header>
 
-    <section id="Portifolio" class="content-section light-bg">
+
+
+ <section id="Portifolio" class="content-section light-bg">
         <h2>Projetos</h2>
         <h3>Pulseira</h3>
         <p>um sistema de armazenamentos de dados capaz de catalogar e monitorar o seu nivel de estrece</p>
         <p>com o objetivo de monitorar e ajudar empresas em reorganizar e priorizar a sude mental</p>
     </section>
+    
+    <script>
+        function exibirSaudacao() {
+            const hora = new Date().getHours();
+            let textoSaudacao = "";
+
+            if (hora >= 5 && hora < 12) {
+                textoSaudacao = "Bom dia! ☀️";
+            } else if (hora >= 12 && hora < 18) {
+                textoSaudacao = "Boa tarde! 🌇";
+            } else {
+                textoSaudacao = "Boa noite! 🌙";
+            }
+
+            document.getElementById("saudacao").textContent = textoSaudacao;
+        }
+
+        exibirSaudacao();
+    </script>
+</body>
+</html>
+
+        exibirSaudacao();
+    </script>
 </body>
 </html>
